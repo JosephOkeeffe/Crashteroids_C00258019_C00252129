@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="0.0.0.0">
+  <Summary numSequencePoints="26" visitedSequencePoints="14" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="53.85" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="3" numClasses="3" visitedMethods="4" numMethods="4" />
+  <Modules>
+    <Module>
+      <Summary numSequencePoints="26" visitedSequencePoints="14" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="53.85" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="3" numClasses="3" visitedMethods="4" numMethods="4" />
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>GameAssembly</ModuleName>
+      <Files>
+        <File uid="2" fullPath="C:/Users/labuser/Desktop/Real World Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Asteroid.cs" />
+        <File uid="3" fullPath="C:/Users/labuser/Desktop/Real World Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Game.cs" />
+        <File uid="4" fullPath="C:/Users/labuser/Desktop/Real World Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Laser.cs" />
+        <File uid="5" fullPath="C:/Users/labuser/Desktop/Real World Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Ship.cs" />
+        <File uid="6" fullPath="C:/Users/labuser/Desktop/Real World Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Spawner.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Asteroid</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663300</MetadataToken>
+              <Name>Asteroid::Asteroid()</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="85" ordinal="0" offset="0" sl="35" sc="5" el="35" ec="5" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="4" uspid="86" ordinal="0" offset="11" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>Game</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="2" visitedSequencePoints="2" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663307</MetadataToken>
+              <Name>Game::Game()</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="125" ordinal="0" offset="0" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="126" ordinal="0" offset="7" sl="37" sc="5" el="37" ec="5" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="22" visitedSequencePoints="10" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="45.45" branchCoverage="0.0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>Ship</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="29.41" branchCoverage="0" crapScore="0" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="17" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="29.41" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663312</MetadataToken>
+              <Name>System.Void Ship::Update()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="4139" uspid="146" ordinal="0" offset="0" sl="55" sc="5" el="55" ec="5" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4139" uspid="147" ordinal="0" offset="1" sl="56" sc="9" el="56" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4139" uspid="148" ordinal="0" offset="11" sl="57" sc="9" el="57" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4139" uspid="149" ordinal="0" offset="12" sl="58" sc="13" el="58" ec="13" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="150" ordinal="0" offset="14" sl="61" sc="9" el="61" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="151" ordinal="0" offset="36" sl="62" sc="9" el="62" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="152" ordinal="0" offset="37" sl="63" sc="13" el="63" ec="13" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="153" ordinal="0" offset="44" sl="64" sc="9" el="64" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="154" ordinal="0" offset="45" sl="66" sc="9" el="66" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="155" ordinal="0" offset="59" sl="67" sc="9" el="67" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="156" ordinal="0" offset="60" sl="68" sc="13" el="68" ec="13" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="157" ordinal="0" offset="67" sl="69" sc="9" el="69" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="158" ordinal="0" offset="68" sl="71" sc="9" el="71" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="159" ordinal="0" offset="82" sl="72" sc="9" el="72" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="160" ordinal="0" offset="83" sl="73" sc="13" el="73" ec="13" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="0" uspid="161" ordinal="0" offset="90" sl="74" sc="9" el="74" ec="9" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4139" uspid="162" ordinal="0" offset="91" sl="75" sc="5" el="75" ec="5" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="0" nPathComplexity="0" sequenceCoverage="100.0" branchCoverage="0" crapScore="0" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100.0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663320</MetadataToken>
+              <Name>Ship::Ship()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="195" ordinal="0" offset="0" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="196" ordinal="0" offset="7" sl="37" sc="5" el="37" ec="5" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="197" ordinal="0" offset="18" sl="38" sc="5" el="38" ec="5" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="198" ordinal="0" offset="25" sl="46" sc="5" el="46" ec="5" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="199" ordinal="0" offset="36" sl="47" sc="5" el="47" ec="5" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

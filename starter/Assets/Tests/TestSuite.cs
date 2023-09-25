@@ -119,4 +119,22 @@ public class TestSuite
         Assert.AreEqual(game.score, 0);
     }
 
+    [UnityTest]
+    public IEnumerator CheckIfAsteroidGetsDestroyed()
+    {
+        // 1
+        GameObject asteroid = game.GetSpawner().SpawnAsteroid();
+
+        bool result = false;
+        yield return new WaitForSeconds(5f);
+
+        if(asteroid == null) 
+        {
+            result = true;
+        }
+
+        Assert.IsTrue(result);
+
+    }
+
 }
