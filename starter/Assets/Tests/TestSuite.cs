@@ -122,7 +122,7 @@ public class TestSuite
     [UnityTest]
     public IEnumerator CheckIfAsteroidGetsDestroyed()
     {
-        // 1
+        
         GameObject asteroid = game.GetSpawner().SpawnAsteroid();
 
         bool result = false;
@@ -134,7 +134,18 @@ public class TestSuite
         }
 
         Assert.IsTrue(result);
+    }
 
+    [UnityTest]
+    public IEnumerator ShipMovesUp()
+    {
+        float initZPos = game.GetShip().transform.position.z;
+
+        game.GetShip().MoveUp();
+
+       
+        yield return new WaitForSeconds(1f);
+        Assert.Less(game.GetShip().transform.localPosition.z, initZPos);
     }
 
 }
