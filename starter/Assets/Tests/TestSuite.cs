@@ -148,4 +148,25 @@ public class TestSuite
         Assert.Less(game.GetShip().transform.localPosition.z, initZPos);
     }
 
+    [UnityTest]
+
+    public IEnumerator WrapAroundTest()
+    {
+
+        Vector3 currentPosition = game.GetShip().transform.position;
+
+        bool result = false;
+
+        game.GetShip().MoveLeft();
+        
+        if(currentPosition.x < 8f)
+        {
+            result = true;
+        }
+
+        yield return new WaitForSeconds(5.0f);
+
+        Assert.IsTrue(result);
+    }
+
 }
