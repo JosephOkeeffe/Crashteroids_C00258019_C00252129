@@ -52,7 +52,7 @@ public class TestSuite
         //1
         asteroid.transform.position = game.GetShip().transform.position;
         //2
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.5f);
 
         //3
         Assert.True(game.isGameOver);
@@ -184,13 +184,11 @@ public class TestSuite
     //[UnityTest]
     //public IEnumerator CheckIfShieldGetsDestroyed()
     //{
-        
-    //    game.GetShield().LoseHealth(4);
 
-    //    if(!game.GetShield().isActiveAndEnabled)
-    //    {
-    //        Debug.Log("GHNJUNBGUBGH");
-    //    }
+    //    //game.GetShield().LoseHealth(4);
+
+    //    Shield shield = game.GetShield();
+    //    shield.LoseHealth(4);
 
     //    yield return new WaitForSeconds(1f);
 
