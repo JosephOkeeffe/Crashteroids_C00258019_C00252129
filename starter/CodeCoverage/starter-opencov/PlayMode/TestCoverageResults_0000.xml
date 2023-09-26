@@ -7,7 +7,7 @@
       <ModuleTime>0001-01-01T00:00:00</ModuleTime>
       <ModuleName>Tests</ModuleName>
       <Files>
-        <File uid="1" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Tests/TestSuite.cs" />
+        <File uid="1" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Tests/TestSuite.cs" />
       </Files>
       <Classes>
         <Class>
@@ -269,11 +269,11 @@
       <ModuleTime>0001-01-01T00:00:00</ModuleTime>
       <ModuleName>GameAssembly</ModuleName>
       <Files>
-        <File uid="2" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Asteroid.cs" />
-        <File uid="3" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Game.cs" />
-        <File uid="4" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Laser.cs" />
-        <File uid="5" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Ship.cs" />
-        <File uid="6" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Current/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Spawner.cs" />
+        <File uid="2" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Asteroid.cs" />
+        <File uid="3" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Game.cs" />
+        <File uid="4" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Laser.cs" />
+        <File uid="5" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Ship.cs" />
+        <File uid="6" fullPath="C:/Users/labuser/Desktop/Real world Sim - Daire/Crashteroids_C00258019_C00252129/starter/Assets/Scripts/Spawner.cs" />
       </Files>
       <Classes>
         <Class>
@@ -330,8 +330,8 @@
               <Name>Asteroid::Asteroid()</Name>
               <FileRef uid="2" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="102" ordinal="0" offset="0" sl="35" sc="5" el="35" ec="5" bec="0" bev="0" fileid="2" />
-                <SequencePoint vc="0" uspid="103" ordinal="0" offset="11" sl="36" sc="5" el="36" ec="5" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="102" ordinal="0" offset="0" sl="35" sc="0" el="35" ec="0" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="0" uspid="103" ordinal="0" offset="11" sl="36" sc="0" el="36" ec="0" bec="0" bev="0" fileid="2" />
               </SequencePoints>
               <BranchPoints />
             </Method>
