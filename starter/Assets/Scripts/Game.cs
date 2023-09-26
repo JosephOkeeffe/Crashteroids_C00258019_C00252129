@@ -94,4 +94,9 @@ public class Game : MonoBehaviour
     {
         return spawner.GetComponent<Spawner>();
     }
+
+    public Shield GetShield()
+    {
+        return GetComponent<Shield>();
+    }
 }

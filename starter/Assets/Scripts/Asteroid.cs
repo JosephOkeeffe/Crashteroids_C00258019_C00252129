@@ -51,10 +51,11 @@ public class Asteroid : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "ShipModel")
+        if (collision.gameObject.tag == "Player")
         {
-            Game.GameOver();
             Destroy(gameObject);
+            Game.GameOver();
         }
+    
     }
 }

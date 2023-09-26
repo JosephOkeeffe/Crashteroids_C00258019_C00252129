@@ -181,4 +181,20 @@ public class TestSuite
         Assert.IsTrue(result);
     }
 
+    //[UnityTest]
+    //public IEnumerator CheckIfShieldGetsDestroyed()
+    //{
+        
+    //    game.GetShield().LoseHealth(4);
+
+    //    if(!game.GetShield().isActiveAndEnabled)
+    //    {
+    //        Debug.Log("GHNJUNBGUBGH");
+    //    }
+
+    //    yield return new WaitForSeconds(1f);
+
+    //    Assert.IsFalse(game.GetShield().isActiveAndEnabled);
+    //}
+
 }
