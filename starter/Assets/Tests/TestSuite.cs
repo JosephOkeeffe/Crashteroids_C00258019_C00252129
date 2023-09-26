@@ -149,6 +149,18 @@ public class TestSuite
     }
 
     [UnityTest]
+    public IEnumerator ShipMovesDown()
+    {
+        float initZPos = game.GetShip().transform.position.z;
+
+        game.GetShip().MoveDown();
+
+
+        yield return new WaitForSeconds(1f);
+        Assert.Greater(game.GetShip().transform.localPosition.z, initZPos);
+    }
+
+    [UnityTest]
 
     public IEnumerator WrapAroundTest()
     {
