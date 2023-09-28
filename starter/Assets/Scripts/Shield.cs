@@ -4,33 +4,40 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-    int health = 0;
-    [SerializeField] GameObject player;
+    public int health = 0;
+    GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         gameObject.SetActive(true);
         health = 3;
+
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = player.transform.position;
-        if(health <= 0)
+        if (player != null)
+        {
+            gameObject.transform.position = player.transform.position;
+        }
+
+        if (health <= 0)
         {
             gameObject.SetActive(false);
         }
     }
 
-   public void LoseHealth(int damage)
+    public void LoseHealth(int damage)
     {
         health -= damage;
         if (health <= 0)
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            Destroy(gameObject);
         }
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -39,9 +46,10 @@ public class Shield : MonoBehaviour
         {
             Destroy(collision.gameObject);
             LoseHealth(1);
-            
+            //gameObject.SetActive(false);
+
         }
-      
+
     }
 
 

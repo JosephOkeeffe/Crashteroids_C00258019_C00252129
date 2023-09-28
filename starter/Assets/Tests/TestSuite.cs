@@ -7,6 +7,7 @@ public class TestSuite
 {
     // 1
     private Game game;
+    private Shield shield;
 
     [SetUp]
     public void Setup()
@@ -14,6 +15,7 @@ public class TestSuite
         GameObject gameGameObject =
             Object.Instantiate(Resources.Load<GameObject>("Prefabs/Game"));
         game = gameGameObject.GetComponent<Game>();
+        shield = gameGameObject.GetComponent<Shield>();
     }
 
     [TearDown]
@@ -52,7 +54,7 @@ public class TestSuite
         //1
         asteroid.transform.position = game.GetShip().transform.position;
         //2
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         //3
         Assert.True(game.isGameOver);
@@ -122,13 +124,13 @@ public class TestSuite
     [UnityTest]
     public IEnumerator CheckIfAsteroidGetsDestroyed()
     {
-        
+
         GameObject asteroid = game.GetSpawner().SpawnAsteroid();
 
         bool result = false;
         yield return new WaitForSeconds(5f);
 
-        if(asteroid == null) 
+        if (asteroid == null)
         {
             result = true;
         }
@@ -143,7 +145,7 @@ public class TestSuite
 
         game.GetShip().MoveUp();
 
-       
+
         yield return new WaitForSeconds(1f);
         Assert.Less(game.GetShip().transform.localPosition.z, initZPos);
     }
@@ -170,8 +172,8 @@ public class TestSuite
         bool result = false;
 
         game.GetShip().MoveLeft();
-        
-        if(currentPosition.x < 8f)
+
+        if (currentPosition.x < 8f)
         {
             result = true;
         }
@@ -181,18 +183,16 @@ public class TestSuite
         Assert.IsTrue(result);
     }
 
-    //[UnityTest]
-    //public IEnumerator CheckIfShieldGetsDestroyed()
-    //{
+    [UnityTest]
+    public IEnumerator ShieldTakesDamageTest()
+    {
+        GameObject shieldGameObject = Object.Instantiate(Resources.Load<GameObject>("Prefabs/Shield"));
 
-    //    //game.GetShield().LoseHealth(4);
+        shieldGameObject.transform.position = Vector3.zero;
+        GameObject asteroid = game.GetSpawner().SpawnAsteroid();
+        asteroid.transform.position = Vector3.zero;
+        yield return new WaitForSeconds(1.0f);
 
-    //    Shield shield = game.GetShield();
-    //    shield.LoseHealth(4);
-
-    //    yield return new WaitForSeconds(1f);
-
-    //    Assert.IsFalse(game.GetShield().isActiveAndEnabled);
-    //}
-
+        Assert.AreEqual(shieldGameObject.GetComponent<Shield>().health, 2);
+    }
 }

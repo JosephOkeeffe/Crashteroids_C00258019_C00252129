@@ -37,7 +37,7 @@ public class Ship : MonoBehaviour
     public float speed = 1;
     public bool canShoot = true;
 
-    [SerializeField] private  MeshRenderer mesh;
+    [SerializeField] private MeshRenderer mesh;
     [SerializeField] private GameObject explosion;
     [SerializeField] private GameObject laser;
     [SerializeField] private Transform shotSpawn;
@@ -124,7 +124,7 @@ public class Ship : MonoBehaviour
         transform.Translate(-Vector3.right * Time.deltaTime * speed);
         if (transform.localPosition.x < maxRight)
         {
-             transform.localPosition = new Vector3(maxRight, 0, 0);
+            transform.localPosition = new Vector3(maxRight, 0, 0);
         }
     }
     public void MoveUp()
